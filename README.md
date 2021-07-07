@@ -1,2 +1,3 @@
 # ArkanoidGame
- ArkanoidGame using Java
+ArkanoidGame using Java
+Made by Ferhat Ali Tokuç
