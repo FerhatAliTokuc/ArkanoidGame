@@ -1,4 +1,4 @@
-
+//Please Read ReadMe.txt file
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -31,7 +31,7 @@ public class Main
 	{
 		
 		JFrame jf = new JFrame();
-		jf.setTitle("TermProject of Ferhat Ali Tokuç");// Baþlýk
+		jf.setTitle("TermProject of Ferhat Ali Tokuï¿½");// Baï¿½lï¿½k
 		jf.setSize(1200,800);// panel boyutu
 		jf.setLocation(100,200);
 		//https://www.tutorialspoint.com/swing/swing_borderlayout.htm
@@ -118,9 +118,9 @@ public class Main
 		        player.play(audioFilePath);	
 		       // JOptionPane.showMessageDialog(null,"All participants defated by Master Tacha so we have not any scores :/ ","High Scores",JOptionPane.WARNING_MESSAGE);
 
-		        String HighScoreDisplay="Name    Score     Date      Týme \n";
+		        String HighScoreDisplay="Name    Score     Date      Tï¿½me \n";
 		        try {
-					HighScoreDisplay= ReadHighScore.HighScoreListInOneLýne(HighScoreDisplay);
+					HighScoreDisplay= ReadHighScore.HighScoreListInOneLï¿½ne(HighScoreDisplay);
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

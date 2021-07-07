@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -6,7 +7,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
-
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -41,7 +41,7 @@ public class AddUserinfoLevelComplete {
             BufferedWriter bufferedwriter = new BufferedWriter(new FileWriter("HighScore.txt"));
 
             String filewrite= "";
-            // 10 kiþi limiti !
+            // 10 kiï¿½i limiti !
             if(playerinfo.size()>10) {
             	for(int i = 0; i < 10; i++) {
                 	filewrite = playerinfo.get(i).Name +" "+ Integer.toString(playerinfo.get(i).Score)+" "+ playerinfo.get(i).locDate.toString() +" "+ playerinfo.get(i).locTime.toString()+"\n"; 
