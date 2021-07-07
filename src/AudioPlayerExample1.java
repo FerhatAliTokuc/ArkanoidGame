@@ -1,7 +1,7 @@
-//https://www.codejava.net/coding/how-to-play-back-audio-in-java-with-examples 
+// This java file for playing menu music
+//Taken by here :https://www.codejava.net/coding/how-to-play-back-audio-in-java-with-examples 
 import java.io.File;
 import java.io.IOException;
- 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
