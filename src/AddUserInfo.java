@@ -1,4 +1,4 @@
-//This javba file write user scores(with sorting) the HighScore.txt
+//This java file write user scores(with sorting) the HighScore.txt
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;

@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -120,7 +119,7 @@ public class Main
 
 		        String HighScoreDisplay="Name    Score     Date      T�me \n";
 		        try {
-					HighScoreDisplay= ReadHighScore.HighScoreListInOneL�ne(HighScoreDisplay);
+					HighScoreDisplay= ReadHighScore.HighScoreListInOneLine(HighScoreDisplay);
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
