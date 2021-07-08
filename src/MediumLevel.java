@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 // Take keyboard order logic from Lab 9 CSE 212 Examples
 public class MediumLevel implements KeyListener,LevelDesign // Tester class 
-// ADD ON : HÝGH SCORE PART
+// ADD ON : Hï¿½GH SCORE PART
 //ADD ON : BALL PART
 //setResizable(false); part
 
@@ -17,7 +17,7 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	 
 	  
 	  
-		int hardlevelflag=0;
+	  int hardlevelflag=0;
 	  int mediumlevelflag=1;
 	  int easylevelflag=0;
 	  private JFrame frame;
@@ -162,7 +162,7 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		  frame.add(panel);
 		  frame.setSize(1075,830);// x 950 y 850
 		  //http://www.cpcwiki.eu/forum/games/arkanoid/
-		  // Forum says 192*256 but ý increase resulation 
+		  // Forum says 192*256 but ï¿½ increase resulation 
 		  frame.addKeyListener(this);
 		  frame.setVisible(true);
 		  frame.setResizable(false);
@@ -175,8 +175,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		  //https://stackoverflow.com/questions/33333225/how-to-check-two-rectangles-are-touching-from-left-or-top-or-right
 		  //https://stackoverflow.com/questions/13226164/how-to-move-jlabel-every-second
 		  ActionListener taskPerformer = new ActionListener() {
-			  int xhýz=10;
-			  int yhýz=10;
+			  int xhiz=10;
+			  int yhiz=10;
 			  int flag=1;
 			  int bricklife20=2;
 			  int bricklife21=2;
@@ -202,14 +202,14 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		    	
 		    	  // 1075 /830 window size
 		    	  if(ballx>1035) {//x up limit
-		    		  xhýz=-xhýz;
+		    		  xhiz=-xhiz;
 		    	  }
 		    	  if(ballx<10) {//x down limit
-		    		  xhýz=-xhýz;
+		    		  xhiz=-xhiz;
 		    	  }
 		    	  // x normal y reverse !
 		    	  if(bally>820) {//y up limit // life checker
-		    		  yhýz=-yhýz;
+		    		  yhiz=-yhiz;
 		    		  if(mediumlevelflag==1) {
 		    			  Main.playerhealth=Main.playerhealth-1;
 		    		  }
@@ -226,12 +226,12 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		    		  }
 		    	  }
 		    	  if(bally<10) {//y down limit
-		    		  yhýz=-yhýz;
+		    		  yhiz=-yhiz;
 		    	  }
 		    	  /////////////////////// 1 hit bricks
 		    	  if (ball.getBounds().intersects(label38.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+		    		  	xhiz=-xhiz;
+		    		  	yhiz=-yhiz;
 	    	        	bricklife38=bricklife38-1;
 	    	        	if(bricklife38<1) {
 	    	        		Main.playerscore+=10;
@@ -242,8 +242,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label37.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife37=bricklife37-1;
 	    	        	if(bricklife37<1) {
 	    	        		Main.playerscore+=10;
@@ -253,8 +253,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label36.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife36=bricklife36-1;
 	    	        	if(bricklife36<1) {
 	    	        		Main.playerscore+=10;
@@ -264,8 +264,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label35.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife35=bricklife35-1;
 	    	        	if(bricklife35<1) {
 	    	        		Main.playerscore+=10;
@@ -275,8 +275,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label34.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife34=bricklife34-1;
 	    	        	if(bricklife34<1) {
 	    	        		Main.playerscore+=10;
@@ -286,8 +286,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label33.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife33=bricklife33-1;
 	    	        	if(bricklife33<1) {
 	    	        		Main.playerscore+=10;
@@ -297,8 +297,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label32.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife32=bricklife32-1;
 	    	        	if(bricklife32<1) {
 	    	        		Main.playerscore+=10;
@@ -308,8 +308,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label31.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife31=bricklife31-1;
 	    	        	if(bricklife31<1) {
 	    	        		Main.playerscore+=10;
@@ -319,8 +319,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label30.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife30=bricklife30-1;
 	    	        	if(bricklife30<1) {
 	    	        		Main.playerscore+=10;
@@ -332,8 +332,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		    	  
 		    	  /////////////////////// 2 hit bricks
 		    	  if (ball.getBounds().intersects(label28.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife28=bricklife28-1;
 	    	        	if(bricklife28<1) {
 	    	        		Main.playerscore+=30;
@@ -343,8 +343,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label27.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife27=bricklife27-1;
 	    	        	if(bricklife27<1) {
 	    	        		label27.setBounds(0,0,0,0);
@@ -354,8 +354,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label26.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife26=bricklife26-1;
 	    	        	if(bricklife26<1) {
 	    	        		label26.setBounds(0,0,0,0);
@@ -365,8 +365,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label25.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife25=bricklife25-1;
 	    	        	if(bricklife25<1) {
 	    	        		label25.setBounds(0,0,0,0);
@@ -376,8 +376,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label24.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife24=bricklife24-1;
 	    	        	if(bricklife24<1) {
 	    	        		label24.setBounds(0,0,0,0);
@@ -387,8 +387,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label23.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife23=bricklife23-1;
 	    	        	if(bricklife23<1) {
 	    	        		label23.setBounds(0,0,0,0);
@@ -398,8 +398,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label22.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife22=bricklife22-1;
 	    	        	if(bricklife22<1) {
 	    	        		label22.setBounds(0,0,0,0);
@@ -409,8 +409,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label21.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife21=bricklife21-1;
 	    	        	if(bricklife21<1) {
 	    	        		label21.setBounds(0,0,0,0);
@@ -420,8 +420,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label20.getBounds())) {
-		    		  	xhýz=-xhýz;
-	    	        	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	bricklife20=bricklife20-1;
 	    	        	if(bricklife20<1) {
 	    	        		label20.setBounds(0,0,0,0);
@@ -432,24 +432,24 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		    	  }
 		    	  /////////////////////////////////  1 hit bricks
 		    	  if (ball.getBounds().intersects(label18.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	label18.setBounds(0,0,0,0);
 	    	        	frame.remove(label18);
 	    	        	Main.playerscore+=10;
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label17.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	label17.setBounds(0,0,0,0);
 	    	        	frame.remove(label17);
 	    	        	Main.playerscore+=10;
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label16.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label16);
 	    	        	label16.setBounds(0,0,0,0);
 	    	        	frame.remove(label16);
@@ -457,8 +457,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label15.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label15);
 	    	        	label15.setBounds(0,0,0,0);
 	    	        	frame.remove(label15);
@@ -466,8 +466,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label14.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label14);
 	    	        	label14.setBounds(0,0,0,0);
 	    	        	frame.remove(label14);
@@ -475,8 +475,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label13.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label13);
 	    	        	label13.setBounds(0,0,0,0);
 	    	        	frame.remove(label13);
@@ -484,8 +484,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label12.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label12);
 	    	        	label12.setBounds(0,0,0,0);
 	    	        	frame.remove(label12);
@@ -493,8 +493,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label11.getBounds())) {
-		    		  	xhýz=-xhýz;
-		    		  	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label11);
 	    	        	label11.setBounds(0,0,0,0);
 	    	        	frame.remove(label11);
@@ -502,8 +502,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label10.getBounds())) {
-		    		  	xhýz=-xhýz;
-	    	        	yhýz=-yhýz;
+						xhiz=-xhiz;
+						yhiz=-yhiz;
 	    	        	//panel.remove(label10);
 	    	        	label10.setBounds(0,0,0,0);
 	    	        	frame.remove(label10);
@@ -511,11 +511,11 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickmediumlevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label1.getBounds())) {// crushbar
-		    		  if(xhýz>30) {
-		    		  		xhýz=30;
+		    		  if(xhiz>30) {
+		    		  		xhiz=30;
 		    		  	}
-		    		  	xhýz=(int) (xhýz*1.1);
-	    	        	yhýz=(int) (-yhýz*1);
+		    		  	xhiz=(int) (xhiz*1.1);
+	    	        	yhiz=(int) (-yhiz*1);
 	    	        	
 	    	        }
 		    	  if(brokenbrickmediumlevel==27) {
@@ -538,8 +538,8 @@ public class MediumLevel implements KeyListener,LevelDesign // Tester class
 		    		  
 		    	  }
 		    	/// test son
-		         	 ballx=ballx+xhýz;
-		         	 bally=bally+yhýz;
+		         	 ballx=ballx+xhiz;
+		         	 bally=bally+yhiz;
 		         	 ball.setLocation(ballx,bally);
 		         	 userscoretext.setBounds(50,-50,200,200);
 		         	 userscoretext.setText("Score "+Integer.toString(Main.playerscore));
