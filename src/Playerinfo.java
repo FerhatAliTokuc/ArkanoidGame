@@ -1,6 +1,6 @@
+//Store user score for HıghScore
 import java.time.LocalDate;
 import java.time.LocalTime;
-
 public class Playerinfo {
 	 public String Name;
 	    public int Score;

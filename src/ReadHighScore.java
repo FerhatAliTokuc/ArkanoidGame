@@ -1,3 +1,4 @@
+//Main menu using this code part for reads HÄ±gh Scores 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,14 +7,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ReadHighScore {
-// KULLANIYORUM 23/05/2021 18:34
-	// main skoru buradan alýyor
     public static void main(String[] args) throws IOException {
  
     
   }
-    public static String HighScoreListInOneLýne(String returntext) throws FileNotFoundException {
-    	// it's mixed code  stackoverflow+Ferhat Ali Tokuc :)
+    public static String HighScoreListInOneLine(String returntext) throws FileNotFoundException {
     	int tenlinecheck=0;
     	String token1 = "";
         Scanner inFile1 = new Scanner(new File("HighScore.txt")).useDelimiter(",\\s*");
@@ -24,14 +22,14 @@ public class ReadHighScore {
         } 
         System.out.println("tempsize"+temps.size());
         inFile1.close();
-        String HighScoreListInOneLýnetemp="";
+        String HighScoreListInOneLinetemp="";
         String[] tempsArray = temps.toArray(new String[0]);
         
         for (String s : tempsArray) {
           System.out.println(s);
-          HighScoreListInOneLýnetemp=HighScoreListInOneLýnetemp+s+"\n";
+          HighScoreListInOneLinetemp=HighScoreListInOneLinetemp+s+"\n";
         }
-        returntext=returntext+HighScoreListInOneLýnetemp;
+        returntext=returntext+HighScoreListInOneLinetemp;
     	return returntext;
     }
 }
