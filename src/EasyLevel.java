@@ -176,8 +176,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		  //https://stackoverflow.com/questions/33333225/how-to-check-two-rectangles-are-touching-from-left-or-top-or-right
 		  //https://stackoverflow.com/questions/13226164/how-to-move-jlabel-every-second
 		  ActionListener taskPerformer = new ActionListener() {
-			  int xhiz=10;
-			  int yhiz=10;
+			  int xspeed=10;
+			  int yspeed=10;
 			  int flag=1;
 			  int bricklife20=1;
 			  int bricklife21=1;
@@ -203,14 +203,14 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		    	
 		    	  // 1075 /830 window size
 		    	  if(ballx>1035) {//x up limit
-		    		  xhiz=-xhiz;
+					xspeed=-xspeed;
 		    	  }
 		    	  if(ballx<10) {//x down limit
-		    		  xhiz=-xhiz;
+					xspeed=-xspeed;
 		    	  }
 		    	  // x normal y reverse !
 		    	  if(bally>820) {//y up limit // life checker
-		    		  yhiz=-yhiz;
+					yspeed=-yspeed;
 		    		  if(easylevelflag==1) {
 		    			  Main.playerhealth=Main.playerhealth-1;
 		    		  }
@@ -227,12 +227,12 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		    		  }
 		    	  }
 		    	  if(bally<10) {//y down limit
-		    		  yhiz=-yhiz;
+					yspeed=-yspeed;
 		    	  }
 		    	  /////////////////////// 1 hit bricks
 		    	  if (ball.getBounds().intersects(label38.getBounds())) {
-		    		  	xhiz=-xhiz;
-	    	        	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife38=bricklife38-1;
 	    	        	if(bricklife38<1) {
 	    	        		Main.playerscore+=10;
@@ -243,8 +243,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label37.getBounds())) {
-		    		  	xhiz=-xhiz;
-	    	        	yhiz=-yhiz;
+						xspeed=-xspeed;
+	    	        	yspeed=-yspeed;
 	    	        	bricklife37=bricklife37-1;
 	    	        	if(bricklife37<1) {
 	    	        		Main.playerscore+=10;
@@ -254,8 +254,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label36.getBounds())) {
-		    		  	xhiz=-xhiz;
-	    	        	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife36=bricklife36-1;
 	    	        	if(bricklife36<1) {
 	    	        		Main.playerscore+=10;
@@ -265,8 +265,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label35.getBounds())) {
-		    		  	xhiz=-xhiz;
-	    	        	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife35=bricklife35-1;
 	    	        	if(bricklife35<1) {
 	    	        		Main.playerscore+=10;
@@ -276,8 +276,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label34.getBounds())) {
-		    		  	xhiz=-xhiz;
-	    	        	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife34=bricklife34-1;
 	    	        	if(bricklife34<1) {
 	    	        		Main.playerscore+=10;
@@ -287,8 +287,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label33.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife33=bricklife33-1;
 	    	        	if(bricklife33<1) {
 	    	        		Main.playerscore+=10;
@@ -298,8 +298,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label32.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife32=bricklife32-1;
 	    	        	if(bricklife32<1) {
 	    	        		Main.playerscore+=10;
@@ -309,8 +309,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label31.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife31=bricklife31-1;
 	    	        	if(bricklife31<1) {
 	    	        		Main.playerscore+=10;
@@ -320,8 +320,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label30.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife30=bricklife30-1;
 	    	        	if(bricklife30<1) {
 	    	        		Main.playerscore+=10;
@@ -333,8 +333,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		    	  
 		    	  /////////////////////// 1 hit bricks
 		    	  if (ball.getBounds().intersects(label28.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife28=bricklife28-1;
 	    	        	if(bricklife28<1) {
 	    	        		Main.playerscore+=10;
@@ -344,8 +344,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label27.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife27=bricklife27-1;
 	    	        	if(bricklife27<1) {
 	    	        		label27.setBounds(0,0,0,0);
@@ -355,8 +355,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label26.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife26=bricklife26-1;
 	    	        	if(bricklife26<1) {
 	    	        		label26.setBounds(0,0,0,0);
@@ -366,8 +366,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label25.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife25=bricklife25-1;
 	    	        	if(bricklife25<1) {
 	    	        		label25.setBounds(0,0,0,0);
@@ -377,8 +377,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label24.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife24=bricklife24-1;
 	    	        	if(bricklife24<1) {
 	    	        		label24.setBounds(0,0,0,0);
@@ -388,8 +388,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label23.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife23=bricklife23-1;
 	    	        	if(bricklife23<1) {
 	    	        		label23.setBounds(0,0,0,0);
@@ -399,8 +399,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label22.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife22=bricklife22-1;
 	    	        	if(bricklife22<1) {
 	    	        		label22.setBounds(0,0,0,0);
@@ -410,8 +410,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label21.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife21=bricklife21-1;
 	    	        	if(bricklife21<1) {
 	    	        		label21.setBounds(0,0,0,0);
@@ -421,8 +421,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	}
 		    	  }
 		    	  if (ball.getBounds().intersects(label20.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	bricklife20=bricklife20-1;
 	    	        	if(bricklife20<1) {
 	    	        		label20.setBounds(0,0,0,0);
@@ -433,24 +433,24 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		    	  }
 		    	  /////////////////////////////////  1 hit bricks
 		    	  if (ball.getBounds().intersects(label18.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	label18.setBounds(0,0,0,0);
 	    	        	frame.remove(label18);
 	    	        	Main.playerscore+=10;
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label17.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	label17.setBounds(0,0,0,0);
 	    	        	frame.remove(label17);
 	    	        	Main.playerscore+=10;
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label16.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label16);
 	    	        	label16.setBounds(0,0,0,0);
 	    	        	frame.remove(label16);
@@ -458,8 +458,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label15.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label15);
 	    	        	label15.setBounds(0,0,0,0);
 	    	        	frame.remove(label15);
@@ -467,8 +467,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label14.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label14);
 	    	        	label14.setBounds(0,0,0,0);
 	    	        	frame.remove(label14);
@@ -476,8 +476,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label13.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label13);
 	    	        	label13.setBounds(0,0,0,0);
 	    	        	frame.remove(label13);
@@ -485,8 +485,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label12.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label12);
 	    	        	label12.setBounds(0,0,0,0);
 	    	        	frame.remove(label12);
@@ -494,8 +494,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label11.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label11);
 	    	        	label11.setBounds(0,0,0,0);
 	    	        	frame.remove(label11);
@@ -503,8 +503,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label10.getBounds())) {
-		    		  	xhiz=-xhiz;
-		    		  	yhiz=-yhiz;
+					xspeed=-xspeed;
+					yspeed=-yspeed;
 	    	        	//panel.remove(label10);
 	    	        	label10.setBounds(0,0,0,0);
 	    	        	frame.remove(label10);
@@ -512,11 +512,11 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 	    	        	brokenbrickeasylevel++;
 		    	    }
 		    	  if (ball.getBounds().intersects(label1.getBounds())) {// crushbar
-		    		  if(xhiz>30) {
-		    		  		xhiz=30;
+		    		  if(xspeed>30) {
+						xspeed=30;
 		    		  	}
-		    		  	xhiz=(int) (xhiz*1.1);
-	    	        	yhiz=(int) (-yhiz*1);
+		    		  	xspeed=(int) (xspeed*1.1);
+						  yspeed=(int) (-yspeed*1);
 	    	        	
 	    	        }
 		    	  if(brokenbrickeasylevel==27) {
@@ -539,8 +539,8 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 		    		  
 		    	  }
 		    	/// test son
-		         	 ballx=ballx+xhiz;
-		         	 bally=bally+yhiz;
+		         	 ballx=ballx+xspeed;
+		         	 bally=bally+yspeed;
 		         	 ball.setLocation(ballx,bally);
 		         	 userscoretext.setBounds(50,-50,200,200);
 		         	 userscoretext.setText("Score "+Integer.toString(Main.playerscore));
