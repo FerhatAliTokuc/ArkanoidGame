@@ -106,7 +106,7 @@ public class Main
 			}
 		});
 		
-		JButton button3 = new JButton("High Scores");
+		JButton button3 = new JButton("High Scores");//Display highest 10 score
 		button3.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
