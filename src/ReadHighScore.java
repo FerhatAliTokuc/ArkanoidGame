@@ -8,8 +8,6 @@ import java.util.Scanner;
 
 public class ReadHighScore {
     public static void main(String[] args) throws IOException {
- 
-    
   }
     public static String HighScoreListInOneLine(String returntext) throws FileNotFoundException {
     	int tenlinecheck=0;

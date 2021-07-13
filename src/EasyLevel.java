@@ -15,9 +15,7 @@ public class EasyLevel implements KeyListener,LevelDesign // Tester class
 //setResizable(false); part
 
 {
-	  
 
-	  
 		int hardlevelflag=0;
 	  int mediumlevelflag=0;
 	  int easylevelflag=1;
